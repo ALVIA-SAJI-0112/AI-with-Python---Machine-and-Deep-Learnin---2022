@@ -1,0 +1,7 @@
+# New Prediction: 
+ 
+sc = StandardScaler()
+sc.fit_transform(X_train)
+ 
+new_prediction = model.predict(sc.transform(np.array([[6,148,72,35,0,33.6,0.627,50]])))
+new_prediction[0]
